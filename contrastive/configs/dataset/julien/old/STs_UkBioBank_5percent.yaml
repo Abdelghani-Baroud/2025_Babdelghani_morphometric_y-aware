@@ -1,0 +1,16 @@
+# @package dataset.STs_UkBioBank_5percent
+dataset_name: STs_UkBioBank_5percent
+numpy_all: /volatile/jl277509/data/UkBioBank/crops/2mm/S.T.s.babies/mask/Rskeleton.npy
+subjects_all: /volatile/jl277509/data/UkBioBank/crops/2mm/S.T.s.babies/mask/Rskeleton_subject.csv
+crop_dir: /volatile/jl277509/data/UkBioBank/crops/2mm/S.T.s.babies/mask/Rcrops
+foldlabel_dir: /volatile/jl277509/data/UkBioBank/crops/2mm/S.T.s.babies/mask/Rlabels
+foldlabel_all: /volatile/jl277509/data/UkBioBank/crops/2mm/S.T.s.babies/mask/Rlabel.npy
+subjects_foldlabel_all: /volatile/jl277509/data/UkBioBank/crops/2mm/S.T.s.babies/mask/Rlabel_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+train_val_csv_file: /volatile/jl277509/data/UkBioBank/subjects_5percent.csv
+test_csv_file: /volatile/jl277509/data/UkBioBank/subjects_empty.csv
+subject_labels_file: /volatile/jl277509/data/UkBioBank/participants_labels_5percent.csv
+subject_column_name: 'Subject'
+#label_names: ["Gender"]
+input_size: (1, 22, 49, 46)

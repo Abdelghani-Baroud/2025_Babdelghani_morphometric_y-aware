@@ -1,0 +1,18 @@
+# @package dataset.SOr-SOlf_right
+dataset_name: SOr-SOlf_right
+pickle_normal: ${dataset_folder}/UkBioBank/crops/2mm/S.Or.-S.Olf./mask/Rskeleton.pkl
+numpy_all: ${dataset_folder}/UkBioBank/crops/2mm/S.Or.-S.Olf./mask/Rskeleton.npy
+subjects_all: ${dataset_folder}/UkBioBank/crops/2mm/S.Or.-S.Olf./mask/Rskeleton_subject.csv
+crop_dir: ${dataset_folder}/UkBioBank/crops/2mm/S.Or.-S.Olf./mask/Rcrops
+foldlabel_dir: ${dataset_folder}/UkBioBank/crops/2mm/S.Or.-S.Olf./mask/Rlabels
+foldlabel_all: ${dataset_folder}/UkBioBank/crops/2mm/S.Or.-S.Olf./mask/Rlabel.npy
+subjects_foldlabel_all: ${dataset_folder}/UkBioBank/crops/2mm/S.Or.-S.Olf./mask/Rlabel_subject.csv
+distbottom_dir: ${dataset_folder}/UkBioBank/crops/2mm/S.Or.-S.Olf./mask/Rdistbottom
+distbottom_all: ${dataset_folder}/UkBioBank/crops/2mm/S.Or.-S.Olf./mask/Rdistbottom.npy
+subjects_distbottom_all: ${dataset_folder}/UkBioBank/crops/2mm/S.Or.-S.Olf./mask/Rdistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+train_val_csv_file: ${dataset_folder}/UkBioBank/subjects_full.csv
+subject_labels_file: ${dataset_folder}/UkBioBank/participants.csv
+subject_column_name: 'participant_id'
+input_size: (1, 31, 38, 24)

@@ -1,0 +1,24 @@
+# @package dataset.SFmarginal-SFinfant_right
+dataset_name: SFmarginal-SFinfant_right
+pickle_normal: ${dataset_folder}/aggregate_schizophrenia/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rskeleton.pkl
+numpy_all: ${dataset_folder}/aggregate_schizophrenia/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rskeleton.npy
+subjects_all: ${dataset_folder}/aggregate_schizophrenia/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rskeleton_subject.csv
+crop_dir: ${dataset_folder}/aggregate_schizophrenia/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rcrops
+foldlabel_dir: ${dataset_folder}/aggregate_schizophrenia/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rlabels
+foldlabel_all: ${dataset_folder}/aggregate_schizophrenia/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rlabel.npy
+subjects_foldlabel_all: ${dataset_folder}/aggregate_schizophrenia/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rlabel_subject.csv
+distbottom_dir: ${dataset_folder}/aggregate_schizophrenia/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rdistbottom
+distbottom_all: ${dataset_folder}/aggregate_schizophrenia/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rdistbottom.npy
+extremity_dir: ${dataset_folder}/aggregate_schizophrenia/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rextremities
+extremity_all: ${dataset_folder}/aggregate_schizophrenia/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rextremities.npy
+subjects_extremity_all: ${dataset_folder}/aggregate_schizophrenia/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rextremities_subject.csv
+subjects_distbottom_all: ${dataset_folder}/aggregate_schizophrenia/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rdistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark:
+train_val_csv_file: ${dataset_folder}/aggregate_schizophrenia/all_subjects.csv
+subject_labels_file: ${dataset_folder}/aggregate_schizophrenia/fake_labels.csv
+subject_column_name: 'participant_id'
+cutout_mask_path:
+cutin_mask_path:
+flip_dataset: False
+input_size: (1, 36, 32, 39)

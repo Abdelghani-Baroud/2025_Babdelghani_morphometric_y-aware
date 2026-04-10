@@ -1,0 +1,19 @@
+# @package dataset.cingulate_right_ACCpatterns_train_test
+dataset_name: cingulate_right_ACCpatterns_train_test
+numpy_all: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/crops/2mm/CINGULATE/mask/Rskeleton.npy
+subjects_all: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/crops/2mm/CINGULATE/mask/Rskeleton_subject.csv
+foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/crops/2mm/CINGULATE/mask/Rlabel.npy
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/crops/2mm/CINGULATE/mask/Rlabel_subject.csv
+crop_dir: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/crops/2mm/CINGULATE/mask/Rcrops
+crop_file_suffix: _cropped_skeleton.nii.gz
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/crops/2mm/CINGULATE/mask/Rlabels
+pickle_benchmark: 
+train_csv_file: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/train_val_test/ACCpatterns_subjects_filtered_train.csv
+val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/train_val_test/ACCpatterns_subjects_filtered_val.csv
+test_csv_file: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/train_val_test/ACCpatterns_subjects_filtered_test.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/subjects_labels.csv
+subject_column_name: 'long_name'
+mask_path:
+flip_dataset: False
+input_size: (1, 16, 37, 37)
+#input_size: (1, 17, 40, 38)

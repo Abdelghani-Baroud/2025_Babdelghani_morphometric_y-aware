@@ -1,0 +1,41 @@
+# @package _global_
+apply_augmentations: True
+random_choice: True
+mixed: False
+foldlabel: True
+trimdepth: True
+uniform_trim: False
+binary_trim: True
+binary_proba_trim: 0.5
+fill_value: 0
+max_angle: 6
+max_distance: 100
+trimdepth_delta: 141
+max_translation: 1
+max_translation_only: [2,2,1]
+checkerboard_size: 4
+keep_extremity: 'bottom'
+percentage: 20
+variable_percentage: False
+sigma_noise: 0.  # set to positive to allow noise
+patch_size_cutout: [10,20]
+patch_size_cutin: [20,30]
+mask_constraint: True
+sigma_elastic: 2
+size_elastic: 3
+proba_trimedges: 0.5
+proba_pepper: 0.5
+keep_bottom_extremities: False
+ball_radius: 2
+small_patch_size: [7,7,7,1]
+nb_patches: 5
+vx_crop_edges: 0
+ignore_axis_trim: 2
+flip_proba: 0.
+ignore_axis_flip: !!null
+slope_noise: 0.15
+offset_noise: 0.25
+#distribution: [0.,0.2,0.4,0.6,0.6,0.8,0.8,0.8,0.8] # BEST : lateral trim # no elastic, #no addbranch, #no foldlabel, equiprobablity
+#distribution: [0.,0.2,0.4,0.6,0.6,0.6,0.8,0.8,0.8,0.8] # BEST HIGHLIGHT 0.5: lateral trim # no elastic, #no addbranch, #no foldlabel, equiprobablity
+#distribution: [0.,0.1667,0.3333,0.5,0.5,0.5,0.6667,0.8333,0.8333,0.8333] # NOISY EDGES 0.5: lateral trim # no elastic, #no addbranch, #no foldlabel, equiprobablity
+distribution: [0.2,0.4,0.6,0.8] # BEST HIGHLIGHT

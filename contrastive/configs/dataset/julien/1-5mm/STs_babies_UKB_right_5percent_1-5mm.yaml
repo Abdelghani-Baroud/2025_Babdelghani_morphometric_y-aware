@@ -1,0 +1,19 @@
+# @package dataset.STs_babies_UKB_right_5percent
+dataset_name: STs_babies_UKB_right_5percent
+pickle_normal: /volatile/jl277509/data/UkBioBank/crops/1.5mm/S.T.s./mask/Rskeleton.pkl
+numpy_all: /volatile/jl277509/data/UkBioBank/crops/1.5mm/S.T.s./mask/Rskeleton.npy
+subjects_all: /volatile/jl277509/data/UkBioBank/crops/1.5mm/S.T.s./mask/Rskeleton_subject.csv
+crop_dir: /volatile/jl277509/data/UkBioBank/crops/1.5mm/S.T.s./mask/Rcrops
+foldlabel_dir: /volatile/jl277509/data/UkBioBank/crops/1.5mm/S.T.s./mask/Rlabels
+foldlabel_all: /volatile/jl277509/data/UkBioBank/crops/1.5mm/S.T.s./mask/Rlabel.npy
+subjects_foldlabel_all: /volatile/jl277509/data/UkBioBank/crops/1.5mm/S.T.s./mask/Rlabel_subject.csv
+distbottom_dir: /volatile/jl277509/data/UkBioBank/crops/1.5mm/S.T.s./mask/Rdistbottom
+distbottom_all: /volatile/jl277509/data/UkBioBank/crops/1.5mm/S.T.s./mask/Rdistbottom.npy
+subjects_distbottom_all: /volatile/jl277509/data/UkBioBank/crops/1.5mm/S.T.s./mask/Rdistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark:
+train_val_csv_file: /volatile/jl277509/data/UkBioBank/subjects_5percent.csv
+test_csv_file: /volatile/jl277509/data/UkBioBank/subjects_empty.csv
+subject_labels_file: /volatile/jl277509/data/UkBioBank/participants_labels_5percent.csv
+subject_column_name: 'Subject'
+input_size: (1, 29, 66, 60)

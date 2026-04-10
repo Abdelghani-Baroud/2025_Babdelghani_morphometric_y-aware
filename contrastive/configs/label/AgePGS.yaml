@@ -1,0 +1,5 @@
+# @package _global_
+label_key: AgePGS
+label_names: ["Age","PGS"]
+label_type: continuous
+  

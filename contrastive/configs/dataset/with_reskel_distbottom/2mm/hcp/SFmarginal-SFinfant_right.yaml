@@ -1,0 +1,20 @@
+# @package dataset.SFmarginal-SFinfant_right
+dataset_name: SFmarginal-SFinfant_right
+pickle_normal: ${dataset_folder}/hcp/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rskeleton.pkl
+numpy_all: ${dataset_folder}/hcp/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rskeleton.npy
+subjects_all: ${dataset_folder}/hcp/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rskeleton_subject.csv
+crop_dir: ${dataset_folder}/hcp/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rcrops
+foldlabel_dir: ${dataset_folder}/hcp/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rlabels
+foldlabel_all: ${dataset_folder}/hcp/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rlabel.npy
+subjects_foldlabel_all: ${dataset_folder}/hcp/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rlabel_subject.csv
+distbottom_dir: ${dataset_folder}/hcp/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rdistbottom
+distbottom_all: ${dataset_folder}/hcp/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rdistbottom.npy
+subjects_distbottom_all: ${dataset_folder}/hcp/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Rdistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+train_val_csv_file: ${dataset_folder}/hcp/FIP/fake_train_val.csv
+test_csv_file: ${dataset_folder}/hcp/Handedness/union_splits.csv
+# splits_basedir: /neurospin/dico/data/deep_folding/current/datasets/hcp/FIP/split_
+subject_labels_file: ${dataset_folder}/hcp/Handedness/handedness_labels.csv
+subject_column_name: 'Subject'
+input_size: (1, 36, 32, 39)

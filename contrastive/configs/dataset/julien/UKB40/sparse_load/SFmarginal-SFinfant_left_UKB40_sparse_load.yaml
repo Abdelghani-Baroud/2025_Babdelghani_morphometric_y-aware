@@ -1,0 +1,24 @@
+# @package dataset.SFmarginal-SFinfant_left_UKB40_sparse_load
+dataset_name: SFmarginal-SFinfant_left_UKB40_sparse_load
+pickle_normal: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Lskeleton.pkl
+coords_all: ${dataset_folder}/UkBioBank40/crops/2mm/S.F.marginal-S.F.inf.ant./sparse_load/L/coords
+numpy_all: ${dataset_folder}/UkBioBank40/crops/2mm/S.F.marginal-S.F.inf.ant./sparse_load/L/skeleton
+subjects_all: ${dataset_folder}/UkBioBank40/L_subjects_header.csv
+crop_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Lcrops
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Llabels
+foldlabel_all: ${dataset_folder}/UkBioBank40/crops/2mm/S.F.marginal-S.F.inf.ant./sparse_load/L/foldlabel
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Llabel_subject.csv
+distbottom_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Ldistbottom
+distbottom_all: ${dataset_folder}/UkBioBank40/crops/2mm/S.F.marginal-S.F.inf.ant./sparse_load/L/distbottom
+subjects_distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.F.marginal-S.F.inf.ant./sparse_load/L/Ldistbottom_subject.csv
+extremity_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.F.marginal-S.F.inf.ant./mask/Lextremities
+extremity_all: ${dataset_folder}/UkBioBank40/crops/2mm/S.F.marginal-S.F.inf.ant./sparse_load/L/extremities
+subjects_extremity_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.F.marginal-S.F.inf.ant./sparse_load/L/Lextremities_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: null
+train_val_csv_file: ${dataset_folder}/UkBioBank40/L_subjects.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/participants_labels.csv
+subject_column_name: Subject
+mask_path: ${dataset_folder}/UkBioBank40/crops/2mm/S.F.marginal-S.F.inf.ant./Lmask.npy
+flip_dataset: false
+input_size: (1, 34, 32, 39)

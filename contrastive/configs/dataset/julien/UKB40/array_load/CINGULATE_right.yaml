@@ -1,0 +1,24 @@
+# @package dataset.CINGULATE_right
+dataset_name: CINGULATE_right
+pickle_normal: ${dataset_folder}/UkBioBank40/crops/2mm/CINGULATE./mask/Rskeleton.pkl
+numpy_all: ${dataset_folder}/UkBioBank40/crops/2mm/CINGULATE./mask/Rskeleton.npy
+subjects_all: ${dataset_folder}/UkBioBank40/crops/2mm/CINGULATE./mask/Rskeleton_subject.csv
+crop_dir: ${dataset_folder}/UkBioBank40/crops/2mm/CINGULATE./mask/Rcrops
+foldlabel_dir: ${dataset_folder}/UkBioBank40/crops/2mm/CINGULATE./mask/Rlabels
+foldlabel_all: ${dataset_folder}/UkBioBank40/crops/2mm/CINGULATE./mask/Rlabel.npy
+subjects_foldlabel_all: ${dataset_folder}/UkBioBank40/crops/2mm/CINGULATE./mask/Rlabel_subject.csv
+distbottom_dir: ${dataset_folder}/UkBioBank40/crops/2mm/CINGULATE./mask/Rdistbottom
+distbottom_all: ${dataset_folder}/UkBioBank40/crops/2mm/CINGULATE./mask/Rdistbottom.npy
+extremity_dir: ${dataset_folder}/UkBioBank40/crops/2mm/CINGULATE./mask/Rextremities
+extremity_all: ${dataset_folder}/UkBioBank40/crops/2mm/CINGULATE./mask/Rextremities.npy
+subjects_extremity_all: ${dataset_folder}/UkBioBank40/crops/2mm/CINGULATE./mask/Rextremities_subject.csv
+subjects_distbottom_all: ${dataset_folder}/UkBioBank40/crops/2mm/CINGULATE./mask/Rdistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+train_val_csv_file: ${dataset_folder}/UkBioBank40/crops/2mm/CINGULATE./mask/Rskeleton_subject.csv
+subject_labels_file: ${dataset_folder}/UkBioBank40/participants_sex_age_volumes_normalized.csv
+subject_column_name: 'participant_id'
+cutout_mask_path:
+cutin_mask_path: ${dataset_folder}/UkBioBank40/crops/2mm/CINGULATE./mask/Rmask.npy
+flip_dataset: False
+input_size: (1, 16, 37, 37)

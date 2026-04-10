@@ -1,0 +1,18 @@
+# @package dataset.multiple_regions_UKB_2000subs
+dataset_name: multiple_regions_UKB_2000subs
+pickle_normal: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/multiple_regions/mask/skeleton.pkl
+numpy_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/multiple_regions/mask/skeleton.npy
+subjects_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/multiple_regions/mask/skeleton_subject.csv
+crop_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/multiple_regions/mask/crops
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/multiple_regions/mask/labels
+foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/multiple_regions/mask/label.npy
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/multiple_regions/mask/label_subject.csv
+distbottom_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/multiple_regions/mask/distbottom
+distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/multiple_regions/mask/distbottom.npy
+subjects_distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/multiple_regions/mask/distbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark:
+train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/multiple_regions/mask/train_val_subject_2000subs.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/multiple_regions/mask/regions_labels_2000subs.csv
+subject_column_name: 'Subject'
+input_size: (1, 30, 38, 37)

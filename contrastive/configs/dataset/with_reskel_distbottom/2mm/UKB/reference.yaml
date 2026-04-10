@@ -1,0 +1,18 @@
+# @package dataset.REPLACE_DATASET
+dataset_name: REPLACE_DATASET
+pickle_normal: ${dataset_folder}/UkBioBank/crops/2mm/REPLACE_CROP_NAME/mask/REPLACE_SIDEskeleton.pkl
+numpy_all: ${dataset_folder}/UkBioBank/crops/2mm/REPLACE_CROP_NAME/mask/REPLACE_SIDEskeleton.npy
+subjects_all: ${dataset_folder}/UkBioBank/crops/2mm/REPLACE_CROP_NAME/mask/REPLACE_SIDEskeleton_subject.csv
+crop_dir: ${dataset_folder}/UkBioBank/crops/2mm/REPLACE_CROP_NAME/mask/REPLACE_SIDEcrops
+foldlabel_dir: ${dataset_folder}/UkBioBank/crops/2mm/REPLACE_CROP_NAME/mask/REPLACE_SIDElabels
+foldlabel_all: ${dataset_folder}/UkBioBank/crops/2mm/REPLACE_CROP_NAME/mask/REPLACE_SIDElabel.npy
+subjects_foldlabel_all: ${dataset_folder}/UkBioBank/crops/2mm/REPLACE_CROP_NAME/mask/REPLACE_SIDElabel_subject.csv
+distbottom_dir: ${dataset_folder}/UkBioBank/crops/2mm/REPLACE_CROP_NAME/mask/REPLACE_SIDEdistbottom
+distbottom_all: ${dataset_folder}/UkBioBank/crops/2mm/REPLACE_CROP_NAME/mask/REPLACE_SIDEdistbottom.npy
+subjects_distbottom_all: ${dataset_folder}/UkBioBank/crops/2mm/REPLACE_CROP_NAME/mask/REPLACE_SIDEdistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+train_val_csv_file: ${dataset_folder}/UkBioBank/subjects_full.csv
+subject_labels_file: ${dataset_folder}/UkBioBank/participants.csv
+subject_column_name: 'participant_id'
+input_size: (1, REPLACE_SIZEX, REPLACE_SIZEY, REPLACE_SIZEZ)

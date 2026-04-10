@@ -1,0 +1,4 @@
+'@package': _global_
+label_names:
+- Isomap_centralgyrus_right_dim2
+label_type: continuous

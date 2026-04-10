@@ -1,0 +1,29 @@
+# @package dataset.FCLp-subsc-FCLa-INSULA_left
+dataset_name: FCLp-subsc-FCLa-INSULA_left
+pickle_normal: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lskeleton.pkl
+numpy_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lskeleton.npy
+subjects_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lskeleton_subject.csv
+crop_dir: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lcrops
+foldlabel_dir: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Llabels
+foldlabel_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Llabel.npy
+subjects_foldlabel_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Llabel_subject.csv
+distbottom_dir: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Ldistbottom
+distbottom_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Ldistbottom.npy
+extremity_dir: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lextremities
+extremity_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lextremities.npy
+subjects_extremity_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lextremities_subject.csv
+subjects_distbottom_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Ldistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+# train_val_csv_file: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lskeleton_subject.csv
+# subject_labels_file: ${dataset_folder}/UkBioBank40/participants_sex_age.csv
+train_csv_file: ${dataset_folder}/UkBioBank40/crops/2mm/LARGE_CINGULATE./mask/Rskeleton_subject_train.csv
+val_csv_file: ${dataset_folder}/UkBioBank40/crops/2mm/LARGE_CINGULATE./mask/Rskeleton_subject_val.csv
+test_csv_file: ${dataset_folder}/UkBioBank40/crops/2mm/LARGE_CINGULATE./mask/Rskeleton_subject_test.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/log_thickness_surface_Age.csv
+subject_column_name: 'participant_id'
+# subject_column_name: 'Subject'
+cutout_mask_path:
+cutin_mask_path: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lmask.npy
+flip_dataset: False
+input_size: (1, 35, 52, 51)

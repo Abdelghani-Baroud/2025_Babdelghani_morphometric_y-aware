@@ -1,0 +1,62 @@
+# @package _global_
+model: SimCLR_fusion
+sigma_labels: null
+sigma_factor: 10000
+# sigma: null
+drop_rate: 0.05
+pretrained_model_path:
+#pretrained_model_path: /volatile/jl277509/Runs/02_STS_babies/Output/ChampollionV0_orbital_dev_branch/15-21-20_3/logs/lightning_logs/version_0/checkpoints/epoch=30-step=18321.ckpt
+#pretrained_model_path: /volatile/jl277509/Runs/02_STS_babies/Output/sparse_multiregion_multihead_test/14-33-26_58/logs/lightning_logs/version_0/checkpoints/epoch=80-step=95742.ckpt
+#pretrained_model_path: /volatile/jl277509/Runs/02_STS_babies/Output/2024-07-15/18-35-41_0/logs/lightning_logs/version_0/checkpoints/epoch=80-step=47952.ckpt
+#pretrained_model_path: /volatile/jl277509/Runs/02_STS_babies/Output/2024-07-18/14-42-30_193/logs/lightning_logs/version_0/checkpoints/epoch=250-step=148341.ckpt
+#pretrained_model_path: /volatile/jl277509/Runs/02_STS_babies/Output/2024-07-17/09-55-45_253/logs/lightning_logs/version_0/checkpoints/epoch=4-step=5920.ckpt
+#pretrained_model_path: /volatile/jl277509/Runs/02_STS_babies/Output/2024-07-16/15-10-25_237/logs/lightning_logs/version_0/checkpoints/epoch=12-step=15392.ckpt
+#pretrained_model_path: /volatile/jl277509/Runs/02_STS_babies/Program/Output/ORBITAL_12-layer_k7/20-56-02_0/logs/lightning_logs/version_0/checkpoints/epoch=70-step=42032.ckpt
+#pretrained_model_path: /volatile/jl277509/Runs/02_STS_babies/Program/Output/ORBITAL_12-layer_k7/16-19-26_238/logs/lightning_logs/version_0/checkpoints/epoch=50-step=30192.ckpt
+#pretrained_model_path: /volatile/jl277509/Runs/02_STS_babies/Program/Output/2024-06-11/11-45-40_220/logs/lightning_logs/version_0/checkpoints/epoch=80-step=47952.ckpt
+#pretrained_model_path: /volatile/jl277509/Runs/02_STS_babies/Program/Output/2024-06-11/09-29-48_234/logs/lightning_logs/version_0/checkpoints/epoch=10-step=6512.ckpt
+#pretrained_model_path: /volatile/jl277509/Runs/02_STS_babies/Program/Output/grid_search_ofc/BT_bs32_L256/logs/lightning_logs/version_0/checkpoints/epoch=249-step=148000.ckpt
+#pretrained_model_path: /neurospin/dico/jlaval/Runs/01_deep_supervised/Program/Output/2023-06-15/14-36-49/logs/lightning_logs/version_0/checkpoints/epoch=250-step=297435.ckpt #UKB
+#pretrained_model_path: /volatile/jl277509/Runs/02_STS_babies/Program/Output/2024-05-13/16-34-19_0/logs/lightning_logs/version_0/checkpoints/epoch=130-step=1572.ckpt #supervised
+#pretrained_model_path: /volatile/jl277509/Runs/02_STS_babies/Program/Output/2024-04-30/BT_L256_0/logs/lightning_logs/version_0/checkpoints/epoch=249-step=148000.ckpt # Big BT
+load_encoder_only: False
+load_convolutions_only: False
+freeze_loaded_layers: False
+freeze_bias: False
+freeze_encoders: False
+fusioned_latent_space_size: -1  # if set to -1, then it will be the sum of the encoders' output sizes
+converter_activation: relu
+with_kernel: False
+kernel_save_dir: "/lustre/fswork/projects/rech/tgu/ulq59dy/Runs/02_champollion_v1/Program/babdelghani_brunch/abdelghani_figures/kernel_heatmap"
+kernel_plot_interval: 100000
+# choose one of: full, scalar, diagonal,cosine
+sigma_mode: full
+standardize_y: False          
+cosine_temperature: 0.1   
+shrinkage: 0
+topk_frac: 0.1   # keep 10% of neighbors per row (after removing diagonal)
+topk_min: 1       # optional (keep at least 1 neighbor)
+eval_only : True
+calibrate_sigma: true
+target_median_weight: 0.2
+calib_pairs: 10000
+calib_seed: 0
+# ===== CLIP loss =====
+clip_temperature: 0.01
+clip_gather_ddp: true
+
+# ===== Tabular encoder =====
+tab_width: 128
+tab_depth: 2
+tab_dropout: 0.1
+tab_hidden_mult: 2.0
+tab_in_norm: true
+
+# ===== PCA input =====
+# pca_csv: /neurospin/dico/babdelghani/Runs/Brain_masks/Output/concat_ukb_elong/MERGED_PCA_ukb_latents__2026-02-10_120921-best__96x112x96__brain_mask_F__full_ukb__K27__plus_axis_elong.csv
+pca_csv: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/log_thickness_surface_Age.csv
+pca_id_col: participant_id
+
+sulc_mask_root: /path/to/sulcal_masks_folder
+sulc_mask_pattern: "{pid}.nii.gz"
+

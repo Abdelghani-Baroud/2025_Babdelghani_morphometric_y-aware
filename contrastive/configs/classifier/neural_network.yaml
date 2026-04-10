@@ -1,0 +1,14 @@
+# @package _global_
+# define path and parameters needed for the classifier on the latent space
+classifier_name: neural_network
+training_embeddings: /neurospin/dico/data/deep_folding/current/datasets/schiz/morphometry_statistics/F.C.M.ant/shape_embs.csv
+results_save_path:
+labels_of_interest:
+classifier_hidden_layers: [100,]
+classifier_activation: 'linear'
+#classifier_loss: MSE
+class_max_epochs: 200
+class_batch_size: 100
+n_repeat: 250
+classifier_seed: 24
+classifier_test_size: 0.2

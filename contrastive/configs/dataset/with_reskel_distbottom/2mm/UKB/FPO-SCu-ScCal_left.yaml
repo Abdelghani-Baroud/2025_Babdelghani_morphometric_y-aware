@@ -1,0 +1,18 @@
+# @package dataset.FPO-SCu-ScCal_left
+dataset_name: FPO-SCu-ScCal_left
+pickle_normal: ${dataset_folder}/UkBioBank/crops/2mm/F.P.O.-S.Cu.-Sc.Cal./mask/Lskeleton.pkl
+numpy_all: ${dataset_folder}/UkBioBank/crops/2mm/F.P.O.-S.Cu.-Sc.Cal./mask/Lskeleton.npy
+subjects_all: ${dataset_folder}/UkBioBank/crops/2mm/F.P.O.-S.Cu.-Sc.Cal./mask/Lskeleton_subject.csv
+crop_dir: ${dataset_folder}/UkBioBank/crops/2mm/F.P.O.-S.Cu.-Sc.Cal./mask/Lcrops
+foldlabel_dir: ${dataset_folder}/UkBioBank/crops/2mm/F.P.O.-S.Cu.-Sc.Cal./mask/Llabels
+foldlabel_all: ${dataset_folder}/UkBioBank/crops/2mm/F.P.O.-S.Cu.-Sc.Cal./mask/Llabel.npy
+subjects_foldlabel_all: ${dataset_folder}/UkBioBank/crops/2mm/F.P.O.-S.Cu.-Sc.Cal./mask/Llabel_subject.csv
+distbottom_dir: ${dataset_folder}/UkBioBank/crops/2mm/F.P.O.-S.Cu.-Sc.Cal./mask/Ldistbottom
+distbottom_all: ${dataset_folder}/UkBioBank/crops/2mm/F.P.O.-S.Cu.-Sc.Cal./mask/Ldistbottom.npy
+subjects_distbottom_all: ${dataset_folder}/UkBioBank/crops/2mm/F.P.O.-S.Cu.-Sc.Cal./mask/Ldistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+train_val_csv_file: ${dataset_folder}/UkBioBank/subjects_full.csv
+subject_labels_file: ${dataset_folder}/UkBioBank/participants.csv
+subject_column_name: 'participant_id'
+input_size: (1, 25, 42, 54)

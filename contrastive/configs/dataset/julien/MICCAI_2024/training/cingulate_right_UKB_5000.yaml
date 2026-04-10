@@ -1,0 +1,19 @@
+# @package dataset.cingulate_right_UKB_5000
+dataset_name: cingulate_right_UKB_5000
+pickle_normal: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/CINGULATE/mask/Rskeleton.pkl
+numpy_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/CINGULATE/mask/Rskeleton.npy
+subjects_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/CINGULATE/mask/Rskeleton_subject.csv
+crop_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/CINGULATE/mask/Rcrops
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/CINGULATE/mask/Rlabels
+foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/CINGULATE/mask/Rlabel.npy
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/CINGULATE/mask/Rlabel_subject.csv
+distbottom_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/CINGULATE/mask/Rdistbottom
+distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/CINGULATE/mask/Rdistbottom.npy
+subjects_distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/CINGULATE/mask/Rdistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark:
+train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/subjects_5000.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/participants_labels.csv
+subject_column_name: 'Subject'
+input_size: (1, 16, 37, 37)
+#input_size: (1, 17, 40, 38) #without reskel

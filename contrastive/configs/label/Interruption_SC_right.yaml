@@ -1,0 +1,3 @@
+# @package _global_
+label_names: ["Interruption_SC_right"]
+label_type: 'binary'

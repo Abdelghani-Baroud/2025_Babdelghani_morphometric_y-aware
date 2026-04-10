@@ -1,0 +1,3 @@
+# @package _global_
+label_names: ["Right_PCS"]
+nb_classes: 2

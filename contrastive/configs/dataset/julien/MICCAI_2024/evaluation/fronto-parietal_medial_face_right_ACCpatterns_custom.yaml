@@ -1,0 +1,18 @@
+# @package dataset fronto-parietal_medial_face_right_ACCpatterns_custom
+dataset_name: fronto-parietal_medial_face_right_ACCpatterns_custom
+numpy_all: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/crops/2mm/fronto-parietal_medial_face./mask/Rskeleton.npy
+subjects_all: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/crops/2mm/fronto-parietal_medial_face./mask/Rskeleton_subject.csv
+foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/crops/2mm/fronto-parietal_medial_face./mask/Rlabel.npy
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/crops/2mm/fronto-parietal_medial_face./mask/Rlabel_subject.csv
+crop_dir: /neurospin/dico/data/deep_folding/papers/miccai2023/Input/datasets/ACCpatterns/crops/2mm/fronto-parietal_medial_face./mask/Rcrops
+crop_file_suffix: _cropped_skeleton.nii.gz
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/crops/2mm/fronto-parietal_medial_face./mask/Rlabels
+pickle_benchmark: 
+train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/ACCpatterns_0_without_headers.csv
+test_csv_file: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/ACCpatterns_subjects_train_val.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/ACCpatterns/subjects_labels.csv
+subject_column_name: 'long_name'
+cutin_mask_path:
+cutout_mask_path:
+flip_dataset: False
+input_size: (1, 24, 82, 58)

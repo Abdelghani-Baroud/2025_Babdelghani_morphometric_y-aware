@@ -1,0 +1,31 @@
+# @package dataset.STs_dHCP_374_subjects
+dataset_name: STs_dHCP_374_subjects
+numpy_all: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/2mm/S.T.s.babies/mask/Rskeleton.npy
+subjects_all: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/2mm/S.T.s.babies/mask/Rskeleton_subject.csv
+crop_dir: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/2mm/S.T.s.babies/mask/Rcrops
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/2mm/S.T.s.babies/mask/Rlabels
+foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/2mm/S.T.s.babies/mask/Rlabel.npy
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/2mm/S.T.s.babies/mask/Rlabel_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark:
+# for two fold supervised classification, switch train and val alternatively
+#train_csv_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/1.5mm/S.T.s./mask/test_50_subject.csv
+#val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/1.5mm/S.T.s./mask/train_50_subject.csv
+#test_csv_file : /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/1.5mm/S.T.s./mask/train_val_subject.csv
+###### for Preterm_28, 32 and 37 labels
+#train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/train_val_subjects_no_sub.csv
+#subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/preterm_labels_no_sub.csv
+###### for preterm_23-28 vs fullterm
+train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/train_val_subjects_23-28_vs_fullterm_no_sub.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/preterm_labels_23-28_vs_fullterm_no_sub.csv
+###### for preterm_23-32 vs fullterm
+#train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/train_val_subjects_23-32_vs_fullterm_no_sub.csv
+#subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/preterm_labels_23-32_vs_fullterm_no_sub.csv
+###### for preterm_28-32 vs fullterm
+#train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/train_val_subjects_28-32_vs_fullterm_no_sub.csv
+#subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/preterm_labels_28-32_vs_fullterm_no_sub.csv
+###### for preterm_32-37 vs fullterm
+#train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/train_val_subjects_32-37_vs_fullterm_no_sub.csv
+#subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/preterm_labels_32-37_vs_fullterm_no_sub.csv
+subject_column_name: 'Subject'
+input_size: (1, 22, 49, 46)

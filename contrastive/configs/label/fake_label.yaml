@@ -1,0 +1,3 @@
+# @package _global_
+label_names: ["fake_label"]
+label_type: 'binary'

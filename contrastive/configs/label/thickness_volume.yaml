@@ -1,0 +1,4 @@
+# @package _global_
+label_names: ['mean_thickness', 'volume'] 
+label_type: continuous
+label_file_name: thickness_volume

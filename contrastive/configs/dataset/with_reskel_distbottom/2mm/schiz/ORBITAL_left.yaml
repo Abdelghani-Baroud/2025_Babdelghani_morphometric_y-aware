@@ -1,0 +1,20 @@
+# @package dataset.ORBITAL_left.yaml
+dataset_name: ORBITAL_left
+pickle_normal: ${dataset_folder}/schiz/crops/2mm/S.Or./mask/Lskeleton.pkl
+numpy_all: ${dataset_folder}/schiz/crops/2mm/S.Or./mask/Lskeleton.npy
+subjects_all: ${dataset_folder}/schiz/crops/2mm/S.Or./mask/Lskeleton_subject.csv
+crop_dir: ${dataset_folder}/schiz/crops/2mm/S.Or./mask/Lcrops
+foldlabel_dir: ${dataset_folder}/schiz/crops/2mm/S.Or./mask/Llabels
+foldlabel_all: ${dataset_folder}/schiz/crops/2mm/S.Or./mask/Llabel.npy
+subjects_foldlabel_all: ${dataset_folder}/schiz/crops/2mm/S.Or./mask/Llabel_subject.csv
+distbottom_dir: ${dataset_folder}/schiz/crops/2mm/S.Or./mask/Ldistbottom
+distbottom_all: ${dataset_folder}/schiz/crops/2mm/S.Or./mask/Ldistbottom.npy
+subjects_distbottom_all: ${dataset_folder}/schiz/crops/2mm/S.Or./mask/Ldistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+train_csv_file: ${dataset_folder}/schiz/aymeric_stratification/with_sub/train_subjects.csv
+val_csv_file: ${dataset_folder}/schiz/aymeric_stratification/with_sub/val_subjects.csv
+test_intra_csv_file: ${dataset_folder}/schiz/aymeric_stratification/with_sub/test_intra_subjects.csv
+test_csv_file: ${dataset_folder}/schiz/aymeric_stratification/with_sub/test_subjects.csv
+subject_labels_file: ${dataset_folder}/schiz/aymeric_stratification/with_sub/used_schiz_subjects.csv
+subject_column_name: 'participant_id'
+input_size: (1, 30, 38, 22)

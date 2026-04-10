@@ -1,0 +1,3 @@
+# @package _global_
+label_names: ["Isomap_central_right_dim6"]
+label_type: 'continuous'

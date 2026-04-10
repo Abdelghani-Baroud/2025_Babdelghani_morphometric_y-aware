@@ -1,0 +1,18 @@
+# @package dataset.Lobule_parietal_sup_right
+dataset_name: Lobule_parietal_sup_right
+pickle_normal: ${dataset_folder}/UkBioBank/crops/2mm/Lobule_parietal_sup./mask/Rskeleton.pkl
+numpy_all: ${dataset_folder}/UkBioBank/crops/2mm/Lobule_parietal_sup./mask/Rskeleton.npy
+subjects_all: ${dataset_folder}/UkBioBank/crops/2mm/Lobule_parietal_sup./mask/Rskeleton_subject.csv
+crop_dir: ${dataset_folder}/UkBioBank/crops/2mm/Lobule_parietal_sup./mask/Rcrops
+foldlabel_dir: ${dataset_folder}/UkBioBank/crops/2mm/Lobule_parietal_sup./mask/Rlabels
+foldlabel_all: ${dataset_folder}/UkBioBank/crops/2mm/Lobule_parietal_sup./mask/Rlabel.npy
+subjects_foldlabel_all: ${dataset_folder}/UkBioBank/crops/2mm/Lobule_parietal_sup./mask/Rlabel_subject.csv
+distbottom_dir: ${dataset_folder}/UkBioBank/crops/2mm/Lobule_parietal_sup./mask/Rdistbottom
+distbottom_all: ${dataset_folder}/UkBioBank/crops/2mm/Lobule_parietal_sup./mask/Rdistbottom.npy
+subjects_distbottom_all: ${dataset_folder}/UkBioBank/crops/2mm/Lobule_parietal_sup./mask/Rdistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+train_val_csv_file: ${dataset_folder}/UkBioBank/subjects_full.csv
+subject_labels_file: ${dataset_folder}/UkBioBank/participants.csv
+subject_column_name: 'participant_id'
+input_size: (1, 41, 45, 48)

@@ -1,0 +1,20 @@
+# @package dataset.OCCIPITAL_left
+dataset_name: OCCIPITAL_left
+pickle_normal: ${dataset_folder}/hcp/crops/2mm/OCCIPITAL/mask/Lskeleton.pkl
+numpy_all: ${dataset_folder}/hcp/crops/2mm/OCCIPITAL/mask/Lskeleton.npy
+subjects_all: ${dataset_folder}/hcp/crops/2mm/OCCIPITAL/mask/Lskeleton_subject.csv
+crop_dir: ${dataset_folder}/hcp/crops/2mm/OCCIPITAL/mask/Lcrops
+foldlabel_dir: ${dataset_folder}/hcp/crops/2mm/OCCIPITAL/mask/Llabels
+foldlabel_all: ${dataset_folder}/hcp/crops/2mm/OCCIPITAL/mask/Llabel.npy
+subjects_foldlabel_all: ${dataset_folder}/hcp/crops/2mm/OCCIPITAL/mask/Llabel_subject.csv
+distbottom_dir: ${dataset_folder}/hcp/crops/2mm/OCCIPITAL/mask/Ldistbottom
+distbottom_all: ${dataset_folder}/hcp/crops/2mm/OCCIPITAL/mask/Ldistbottom.npy
+subjects_distbottom_all: ${dataset_folder}/hcp/crops/2mm/OCCIPITAL/mask/Ldistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+train_val_csv_file: ${dataset_folder}/hcp/FIP/fake_train_val.csv
+test_csv_file: ${dataset_folder}/hcp/Handedness/union_splits.csv
+# splits_basedir: /neurospin/dico/data/deep_folding/current/datasets/hcp/FIP/split_
+subject_labels_file: ${dataset_folder}/hcp/Handedness/handedness_labels.csv
+subject_column_name: 'Subject'
+input_size: (1, 35, 28, 42)

@@ -1,0 +1,3 @@
+# @package _global_
+label_names: ["PGS"]
+label_type: 'continuous'

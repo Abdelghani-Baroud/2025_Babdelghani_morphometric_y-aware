@@ -1,0 +1,3 @@
+# @package _global_
+label_names: ["Age"]
+label_type: 'continuous'

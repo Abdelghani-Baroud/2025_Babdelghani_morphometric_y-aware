@@ -1,0 +1,22 @@
+# @package dataset.FCLp-subsc-FCLa-INSULA_left_UKB_sparse_load
+dataset_name: FCLp-subsc-FCLa-INSULA_left_UKB_sparse_load
+pickle_normal: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lskeleton.pkl
+coords_all: ${dataset_folder}/UkBioBank/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lskeleton_sparse/coords
+numpy_all: ${dataset_folder}/UkBioBank/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lskeleton_sparse/skeleton
+subjects_all: ${dataset_folder}/UkBioBank/L_subjects_header.csv
+crop_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lcrops
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Llabels
+foldlabel_all: ${dataset_folder}/UkBioBank/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lskeleton_sparse/foldlabel
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Llabel_subject.csv
+distbottom_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Ldistbottom
+distbottom_all: ${dataset_folder}/UkBioBank/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lskeleton_sparse/distbottom
+subjects_distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Ldistbottom_subject.csv
+extremity_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lextremities
+extremity_all: ${dataset_folder}/UkBioBank/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lskeleton_sparse/extremities
+subjects_extremity_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/F.C.L.p.-subsc.-F.C.L.a.-INSULA./mask/Lextremities_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: null
+train_val_csv_file: ${dataset_folder}/UkBioBank/L_subjects.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/participants_labels.csv
+subject_column_name: Subject
+input_size: (1, 35, 52, 51)

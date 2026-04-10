@@ -1,0 +1,36 @@
+# @package _global_
+apply_augmentations: True
+random_choice: False
+mixed: True
+foldlabel: False
+trimdepth: False
+uniform_trim: False
+binary_trim: True
+binary_proba_trim: 0.5
+max_distance: 100
+trimdepth_delta: 141
+proba_trimedges: 0.5
+proba_pepper_trimedges: 0.5
+proba_pepper_trimdepth: 1. # no pepper noise, fully removed
+ball_radius: 2
+fill_value: 0
+max_translation: 1
+proba_translation: 1
+keep_extremity: 'bottom'
+keep_extremity_trimdepth: 'top'
+patch_size_cutout: [5,30]
+patch_size_cutin: [20,90]
+keep_proba_per_branch_cutout: 0.5
+keep_proba_global_cutout: 1.
+keep_proba_per_branch_cutin: 0.5
+keep_proba_global_cutin: 1.
+mask_constraint: True
+offset_proba_no_augm: 0. # offset to maintain a value if proba_augmentation is high.
+proba_trimdepth: 0.
+proba_trimextremities: 0.
+proba_cutout: 0.4
+proba_cutin: 0.4
+redefine_bottom: True
+proba_contour: 0.
+proba_rotation: 1
+max_angle: 18

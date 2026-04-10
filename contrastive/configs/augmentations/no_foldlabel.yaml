@@ -1,0 +1,15 @@
+# @package _global_
+resize: False
+both: False
+apply_augmentations: True
+random_choice: False
+mixed: False
+foldlabel: False
+trimdepth: False
+fill_value: 0
+patch_size: [1, 11, 25, 25]
+max_angle: 6
+max_translation: 1
+checkerboard_size: 4
+keep_extremity: 'bottom'
+sigma_noise: 0.  # set to positive to allow noise

@@ -1,0 +1,21 @@
+# @package dataset.FIP_right_kraken
+dataset_name: FIP_right_kraken
+pickle_normal: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/F.I.P./mask/Rskeleton.pkl
+numpy_all: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/F.I.P./mask/Rskeleton.npy
+subjects_all: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/F.I.P./mask/Rskeleton_subject.csv
+crop_dir: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/F.I.P./mask/Rcrops
+foldlabel_dir: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/F.I.P./mask/Rlabels
+foldlabel_all: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/F.I.P./mask/Rlabel.npy
+subjects_foldlabel_all: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/F.I.P./mask/Rlabel_subject.csv
+distbottom_dir: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/F.I.P./mask/Rdistbottom
+distbottom_all: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/F.I.P./mask/Rdistbottom.npy
+extremity_dir: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/F.I.P./mask/Rextremities
+extremity_all: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/F.I.P./mask/Rextremities.npy
+subjects_extremity_all: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/F.I.P./mask/Rextremities_subject.csv
+subjects_distbottom_all: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/F.I.P./mask/Rdistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+train_val_csv_file: /home_local/jl277509/data/datasets/UkBioBank/subjects_full.csv
+subject_labels_file: /home_local/jl277509/data/datasets/UkBioBank/participants.csv
+subject_column_name: 'participant_id'
+input_size: (1, 39, 45, 44)

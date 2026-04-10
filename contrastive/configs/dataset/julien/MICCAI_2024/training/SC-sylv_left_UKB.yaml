@@ -1,0 +1,23 @@
+# @package dataset.SC-sylv_left_UKB
+dataset_name: SC-sylv_left_UKB
+pickle_normal: ${dataset_folder}/UkBioBank/crops/2mm/S.C.-sylv./mask/Lskeleton.pkl
+numpy_all: ${dataset_folder}/UkBioBank/crops/2mm/S.C.-sylv./mask/Lskeleton.npy
+subjects_all: ${dataset_folder}/UkBioBank/crops/2mm/S.C.-sylv./mask/Lskeleton_subject.csv
+crop_dir: ${dataset_folder}/UkBioBank/crops/2mm/S.C.-sylv./mask/Lcrops
+foldlabel_dir: ${dataset_folder}/UkBioBank/crops/2mm/S.C.-sylv./mask/Llabels
+foldlabel_all: ${dataset_folder}/UkBioBank/crops/2mm/S.C.-sylv./mask/Llabel.npy
+subjects_foldlabel_all: ${dataset_folder}/UkBioBank/crops/2mm/S.C.-sylv./mask/Llabel_subject.csv
+distbottom_dir: ${dataset_folder}/UkBioBank/crops/2mm/S.C.-sylv./mask/Ldistbottom
+distbottom_all: ${dataset_folder}/UkBioBank/crops/2mm/S.C.-sylv./mask/Ldistbottom.npy
+subjects_distbottom_all: ${dataset_folder}/UkBioBank/crops/2mm/S.C.-sylv./mask/Ldistbottom_subject.csv
+extremity_dir: ${dataset_folder}/UkBioBank/crops/2mm/S.C.-sylv./mask/Lextremities
+extremity_all: ${dataset_folder}/UkBioBank/crops/2mm/S.C.-sylv./mask/Lextremities.npy
+subjects_extremity_all: ${dataset_folder}/UkBioBank/crops/2mm/S.C.-sylv./mask/Lextremities_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark:
+train_val_csv_file: ${dataset_folder}/UkBioBank/subjects_full.csv
+subject_labels_file: ${dataset_folder}/UkBioBank/participants_labels.csv
+subject_column_name: 'Subject'
+input_size: (1, 38, 36, 49)
+
+

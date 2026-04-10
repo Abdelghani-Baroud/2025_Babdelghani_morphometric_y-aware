@@ -1,0 +1,4 @@
+# @package _global_
+device: cuda
+num_cpu_workers: 30
+environment: brainvisa

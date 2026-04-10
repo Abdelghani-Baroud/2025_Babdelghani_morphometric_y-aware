@@ -1,0 +1,24 @@
+# @package dataset.SC-SPoC_left
+dataset_name: SC-SPoC_left
+pickle_normal: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.C.-S.Po.C./mask/Lskeleton.pkl
+numpy_all: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.C.-S.Po.C./mask/Lskeleton.npy
+subjects_all: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.C.-S.Po.C./mask/Lskeleton_subject.csv
+crop_dir: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.C.-S.Po.C./mask/Lcrops
+foldlabel_dir: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.C.-S.Po.C./mask/Llabels
+foldlabel_all: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.C.-S.Po.C./mask/Llabel.npy
+subjects_foldlabel_all: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.C.-S.Po.C./mask/Llabel_subject.csv
+distbottom_dir: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.C.-S.Po.C./mask/Ldistbottom
+distbottom_all: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.C.-S.Po.C./mask/Ldistbottom.npy
+extremity_dir: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.C.-S.Po.C./mask/Lextremities
+extremity_all: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.C.-S.Po.C./mask/Lextremities.npy
+subjects_extremity_all: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.C.-S.Po.C./mask/Lextremities_subject.csv
+subjects_distbottom_all: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.C.-S.Po.C./mask/Ldistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+train_val_csv_file: ${dataset_folder}/dHCP_374_subjects/all_subjects.csv
+subject_labels_file: ${dataset_folder}/dHCP_374_subjects/participants.csv
+subject_column_name: 'Subject'
+cutout_mask_path:
+cutin_mask_path: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.C.-S.Po.C./mask/Lmask.npy
+flip_dataset: False
+input_size: (1, 40, 44, 49)

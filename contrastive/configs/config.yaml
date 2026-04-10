@@ -1,0 +1,20 @@
+defaults:
+  - _self_
+  - augmentations: mixed
+  - backbone: ConvNet
+  - classifier: svm
+  - dataset/julien/UKB40/array_load/FCLp-subsc-FCLa-INSULA_left
+  - dataset_localization: neurospin
+  - embeddings: embeddings
+  - hydra: local
+  - label: surface
+  - mode: encoder
+  - model: SimCLR_fusion
+  - platform: cuda_not_brainvisa
+  - projection_head: relu
+  - trainer: default
+  - wandb: identity
+  - override hydra/job_logging: custom
+
+data: ${oc.dict.values:dataset}
+datakey: ${oc.dict.keys:dataset}

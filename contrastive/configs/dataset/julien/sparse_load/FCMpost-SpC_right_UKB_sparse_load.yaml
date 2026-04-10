@@ -1,0 +1,22 @@
+# @package dataset.FCMpost-SpC_right_UKB_sparse_load
+dataset_name: FCMpost-SpC_right_UKB_sparse_load
+pickle_normal: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/F.C.M.post.-S.p.C./mask/Rskeleton.pkl
+coords_all: ${dataset_folder}/UkBioBank/crops/2mm/F.C.M.post.-S.p.C./mask/Rskeleton_sparse/coords
+numpy_all: ${dataset_folder}/UkBioBank/crops/2mm/F.C.M.post.-S.p.C./mask/Rskeleton_sparse/skeleton
+subjects_all: ${dataset_folder}/UkBioBank/R_subjects_header.csv
+crop_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/F.C.M.post.-S.p.C./mask/Rcrops
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/F.C.M.post.-S.p.C./mask/Rlabels
+foldlabel_all: ${dataset_folder}/UkBioBank/crops/2mm/F.C.M.post.-S.p.C./mask/Rskeleton_sparse/foldlabel
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/F.C.M.post.-S.p.C./mask/Rlabel_subject.csv
+distbottom_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/F.C.M.post.-S.p.C./mask/Rdistbottom
+distbottom_all: ${dataset_folder}/UkBioBank/crops/2mm/F.C.M.post.-S.p.C./mask/Rskeleton_sparse/distbottom
+subjects_distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/F.C.M.post.-S.p.C./mask/Rdistbottom_subject.csv
+extremity_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/F.C.M.post.-S.p.C./mask/Rextremities
+extremity_all: ${dataset_folder}/UkBioBank/crops/2mm/F.C.M.post.-S.p.C./mask/Rskeleton_sparse/extremities
+subjects_extremity_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/F.C.M.post.-S.p.C./mask/Rextremities_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: null
+train_val_csv_file: ${dataset_folder}/UkBioBank/R_subjects.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/participants_labels.csv
+subject_column_name: Subject
+input_size: (1, 17, 47, 31)

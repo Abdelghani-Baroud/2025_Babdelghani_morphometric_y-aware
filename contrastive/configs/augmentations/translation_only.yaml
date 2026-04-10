@@ -1,0 +1,14 @@
+# @package _global_
+apply_augmentations: True
+random_choice: False
+mixed: False
+foldlabel: True
+trimdepth: False
+fill_value: 0
+max_angle: 6
+max_translation: 1
+checkerboard_size: 4
+keep_extremity: 'bottom'
+percentage: 0
+variable_percentage: False
+sigma_noise: 0.  # set to positive to allow noise

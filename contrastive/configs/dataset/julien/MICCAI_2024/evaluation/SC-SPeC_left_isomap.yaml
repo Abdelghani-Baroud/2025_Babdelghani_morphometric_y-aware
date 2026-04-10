@@ -1,0 +1,17 @@
+# @package dataset.SC-SPeC_left_isomap
+dataset_name: SC-SPeC_left_isomap
+numpy_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/S.C.-S.Pe.C./mask/Lskeleton.npy
+subjects_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/S.C.-S.Pe.C./mask/Lskeleton_subject.csv
+foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/S.C.-S.Pe.C./mask/Llabel.npy
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/S.C.-S.Pe.C./mask/Llabel_subject.csv
+crop_dir: /neurospin/dico/data/deep_folding/papers/miccai2023/Input/datasets/hcp/crops/2mm/S.C.-S.Pe.C./mask/Lcrops
+crop_file_suffix: _cropped_skeleton.nii.gz
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/S.C.-S.Pe.C./mask/Llabels
+pickle_benchmark: 
+train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/hcp/hcp_isomap_subjects.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/hcp/hcp_isomap_labels_centralgyrus_left.csv
+subject_column_name: 'Subject'
+cutout_mask_path:
+cutin_mask_path:
+flip_dataset: False
+input_size: (1, 38, 49, 52)

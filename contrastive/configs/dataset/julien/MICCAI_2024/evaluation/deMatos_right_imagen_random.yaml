@@ -1,0 +1,17 @@
+# @package dataset.deMatos_right_imagen_random
+dataset_name: deMatos_right_imagen_random
+numpy_all: /neurospin/dico/data/deep_folding/current/datasets/imagen/crops/2mm/deMatos./mask/Rskeleton.npy
+subjects_all: /neurospin/dico/data/deep_folding/current/datasets/imagen/crops/2mm/deMatos./mask/Rskeleton_subject.csv
+foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/imagen/crops/2mm/deMatos./mask/Rlabel.npy
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/imagen/crops/2mm/deMatos./mask/Rlabel_subject.csv
+crop_dir: /neurospin/dico/data/deep_folding/papers/miccai2023/Input/datasets/imagen/crops/2mm/deMatos./mask/Rcrops
+crop_file_suffix: _cropped_skeleton.nii.gz
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/imagen/crops/2mm/deMatos./mask/Rlabels
+pickle_benchmark: 
+train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/imagen/patterns/train_val_subjects.csv
+test_csv_file: /neurospin/dico/data/deep_folding/current/datasets/imagen/patterns/test_subjects.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/imagen/patterns/interruptions.csv
+subject_column_name: 'Subject'
+mask_path:
+flip_dataset: False
+input_size: (1, 40, 62, 42)

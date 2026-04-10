@@ -1,0 +1,19 @@
+# @package dataset.orbital_UKB_left_1-5mm
+dataset_name: orbital_UKB_left_1-5mm
+pickle_normal: /volatile/jl277509/data/UkBioBank/crops/1.5mm/ORBITAL/mask/Lskeleton.pkl
+numpy_all: /volatile/jl277509/data/UkBioBank/crops/1.5mm/ORBITAL/mask/Lskeleton.npy
+subjects_all: /volatile/jl277509/data/UkBioBank/crops/1.5mm/ORBITAL/mask/Lskeleton_subject.csv
+crop_dir: /volatile/jl277509/data/UkBioBank/crops/1.5mm/ORBITAL/mask/Lcrops
+foldlabel_dir: /volatile/jl277509/data/UkBioBank/crops/1.5mm/ORBITAL/mask/Llabels
+foldlabel_all: /volatile/jl277509/data/UkBioBank/crops/1.5mm/ORBITAL/mask/Llabel.npy
+subjects_foldlabel_all: /volatile/jl277509/data/UkBioBank/crops/1.5mm/ORBITAL/mask/Llabel_subject.csv
+distbottom_dir: /volatile/jl277509/data/UkBioBank/crops/1.5mm/ORBITAL/mask/Ldistbottom
+distbottom_all: /volatile/jl277509/data/UkBioBank/crops/1.5mm/ORBITAL/mask/Ldistbottom.npy
+subjects_distbottom_all: /volatile/jl277509/data/UkBioBank/crops/1.5mm/ORBITAL/mask/Ldistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark:
+train_val_csv_file: /volatile/jl277509/data/UkBioBank/subjects_full.csv
+subject_labels_file: /volatile/jl277509/data/UkBioBank/participants_labels.csv
+subject_column_name: 'Subject'
+input_size: (1, 41, 50, 30)
+

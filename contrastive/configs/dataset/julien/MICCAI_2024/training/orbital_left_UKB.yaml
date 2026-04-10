@@ -1,0 +1,25 @@
+# @package dataset.orbital_left_UKB
+dataset_name: orbital_left_UKB
+pickle_normal: ${dataset_folder}/UkBioBank/crops/2mm/ORBITAL/mask/Lskeleton.pkl
+numpy_all: ${dataset_folder}/UkBioBank/crops/2mm/ORBITAL/mask/Lskeleton.npy
+subjects_all: ${dataset_folder}/UkBioBank/crops/2mm/ORBITAL/mask/Lskeleton_subject.csv
+crop_dir: ${dataset_folder}/UkBioBank/crops/2mm/ORBITAL/mask/Lcrops
+foldlabel_dir: ${dataset_folder}/UkBioBank/crops/2mm/ORBITAL/mask/Llabels
+foldlabel_all: ${dataset_folder}/UkBioBank/crops/2mm/ORBITAL/mask/Llabel.npy
+subjects_foldlabel_all: ${dataset_folder}/UkBioBank/crops/2mm/ORBITAL/mask/Llabel_subject.csv
+distbottom_dir: ${dataset_folder}/UkBioBank/crops/2mm/ORBITAL/mask/Ldistbottom
+distbottom_all: ${dataset_folder}/UkBioBank/crops/2mm/ORBITAL/mask/Ldistbottom.npy
+subjects_distbottom_all: ${dataset_folder}/UkBioBank/crops/2mm/ORBITAL/mask/Ldistbottom_subject.csv
+extremity_dir: ${dataset_folder}/UkBioBank/crops/2mm/ORBITAL/mask/Lextremities
+extremity_all: ${dataset_folder}/UkBioBank/crops/2mm/ORBITAL/mask/Lextremities.npy
+subjects_extremity_all: ${dataset_folder}/UkBioBank/crops/2mm/ORBITAL/mask/Lextremities_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark:
+train_val_csv_file: ${dataset_folder}/UkBioBank/subjects_full.csv
+subject_labels_file: ${dataset_folder}/UkBioBank/participants.csv
+subject_column_name: 'Subject'
+cutin_mask_path: ${dataset_folder}/UkBioBank/crops/2mm/S.Or./mask/Lmask.npy
+cutout_mask_path:
+flip_dataset: False
+input_size: (1, 30, 38, 22)
+#input_size: (1, 39, 32, 17)

@@ -1,0 +1,15 @@
+# @package dataset.SC_left_dHCP_374_subjects
+dataset_name: SC_left_dHCP_374_subjects
+numpy_all: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/2mm/S.C.babies/mask/Lskeleton.npy
+subjects_all: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/2mm/S.C.babies/mask/Lskeleton_subject.csv
+crop_dir: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/2mm/S.C.babies/mask/Lcrops
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/2mm/S.C.babies/mask/Llabels
+foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/2mm/S.C.babies/mask/Llabel.npy
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/2mm/S.C.babies/mask/Llabel_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/2mm/S.C.baby/mask/train_val_subject.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/2mm/S.C.baby/mask/preterm_labels.csv
+subject_column_name: 'Subject'
+#label_names: ["Gender"]
+input_size: (1, 43, 43, 44)

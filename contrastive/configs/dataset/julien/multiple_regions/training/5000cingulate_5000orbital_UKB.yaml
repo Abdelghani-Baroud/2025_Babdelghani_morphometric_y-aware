@@ -1,0 +1,18 @@
+# @package dataset.5000cingulate_5000orbital_UKB
+dataset_name: 5000cingulate_5000orbital_UKB
+pickle_normal: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/5000cingulate_5000orbital/mask/skeleton.pkl
+numpy_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/5000cingulate_5000orbital/mask/skeleton.npy
+subjects_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/5000cingulate_5000orbital/mask/skeleton_subject.csv
+crop_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/5000cingulate_5000orbital/mask/crops
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/5000cingulate_5000orbital/mask/labels
+foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/5000cingulate_5000orbital/mask/label.npy
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/5000cingulate_5000orbital/mask/label_subject.csv
+distbottom_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/5000cingulate_5000orbital/mask/distbottom
+distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/5000cingulate_5000orbital/mask/distbottom.npy
+subjects_distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/5000cingulate_5000orbital/mask/distbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark:
+train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/5000cingulate_5000orbital/mask/train_val_subject.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/mixed_regions/5000cingulate_5000orbital/mask/regions_labels.csv
+subject_column_name: 'Subject'
+input_size: (1, 30, 38, 37)

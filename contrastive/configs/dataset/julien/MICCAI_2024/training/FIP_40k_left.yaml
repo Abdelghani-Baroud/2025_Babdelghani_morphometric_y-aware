@@ -1,0 +1,23 @@
+# @package dataset.FIP_40k_left
+dataset_name: FIP_40k_left
+pickle_normal: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/F.I.P./mask/Lskeleton.pkl
+numpy_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/F.I.P./mask/Lskeleton.npy
+subjects_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/F.I.P./mask/Lskeleton_subject.csv
+crop_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/F.I.P./mask/Lcrops
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/F.I.P./mask/Llabels
+foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/F.I.P./mask/Llabel.npy
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/F.I.P./mask/Llabel_subject.csv
+distbottom_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/F.I.P./mask/Ldistbottom
+distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/F.I.P./mask/Ldistbottom.npy
+extremity_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/F.I.P./mask/Lextremities
+extremity_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/F.I.P./mask/Lextremities.npy
+subjects_extremity_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/F.I.P./mask/Lextremities_subject.csv
+subjects_distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/F.I.P./mask/Ldistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/F.I.P./mask/Lskeleton_subject.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/F.I.P./mask/Lskeleton_subject.csv # no label
+subject_column_name: 'Subject'
+mask_path:
+flip_dataset: False
+input_size: (1, 40, 44, 42)

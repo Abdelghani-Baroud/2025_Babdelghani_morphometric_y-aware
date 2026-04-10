@@ -1,0 +1,22 @@
+# @package dataset.SOr_left_UKB_rotated_sparse_load
+dataset_name: SOr_left_UKB_rotated_sparse_load
+pickle_normal: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/S.Or./mask/Lskeleton.pkl
+coords_all: /volatile/jl277509/data/UkBioBank/crops/_rotated/2mm/S.Or./mask/Lskeleton_sparse/coords
+numpy_all: /volatile/jl277509/data/UkBioBank/crops/_rotated/2mm/S.Or./mask/Lskeleton_sparse/skeleton
+subjects_all: /volatile/jl277509/data/UkBioBank/L_subjects_header.csv
+crop_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/S.Or./mask/Lcrops
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/S.Or./mask/Llabels
+foldlabel_all: /volatile/jl277509/data/UkBioBank/crops/_rotated/2mm/S.Or./mask/Lskeleton_sparse/foldlabel
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/S.Or./mask/Llabel_subject.csv
+distbottom_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/S.Or./mask/Ldistbottom
+distbottom_all: /volatile/jl277509/data/UkBioBank/crops/_rotated/2mm/S.Or./mask/Lskeleton_sparse/distbottom
+subjects_distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/S.Or./mask/Lextremities_subject.csv
+extremity_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/S.Or./mask/Lextremities
+extremity_all: /volatile/jl277509/data/UkBioBank/crops/_rotated/2mm/S.Or./mask/Lskeleton_sparse/extremities
+subjects_extremity_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/S.Or./mask/Lextremities_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark:
+train_val_csv_file: /volatile/jl277509/data/UkBioBank/L_subjects.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/participants_labels.csv
+subject_column_name: 'Subject'
+input_size: (1, 39, 32, 17)

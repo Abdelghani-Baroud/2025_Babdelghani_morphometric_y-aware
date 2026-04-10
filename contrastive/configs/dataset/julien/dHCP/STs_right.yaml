@@ -1,0 +1,24 @@
+# @package dataset.STs_right
+dataset_name: STs_right
+pickle_normal: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.T.s./mask/Rskeleton.pkl
+numpy_all: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.T.s./mask/Rskeleton.npy
+subjects_all: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.T.s./mask/Rskeleton_subject.csv
+crop_dir: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.T.s./mask/Rcrops
+foldlabel_dir: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.T.s./mask/Rlabels
+foldlabel_all: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.T.s./mask/Rlabel.npy
+subjects_foldlabel_all: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.T.s./mask/Rlabel_subject.csv
+distbottom_dir: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.T.s./mask/Rdistbottom
+distbottom_all: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.T.s./mask/Rdistbottom.npy
+extremity_dir: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.T.s./mask/Rextremities
+extremity_all: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.T.s./mask/Rextremities.npy
+subjects_extremity_all: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.T.s./mask/Rextremities_subject.csv
+subjects_distbottom_all: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.T.s./mask/Rdistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+train_val_csv_file: ${dataset_folder}/dHCP_374_subjects/all_subjects.csv
+subject_labels_file: ${dataset_folder}/dHCP_374_subjects/participants.csv
+subject_column_name: 'Subject'
+cutout_mask_path:
+cutin_mask_path: ${dataset_folder}/dHCP_374_subjects/crops/2mm/S.T.s./mask/Rmask.npy
+flip_dataset: False
+input_size: (1, 24, 52, 51)

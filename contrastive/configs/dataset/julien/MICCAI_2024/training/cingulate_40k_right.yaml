@@ -1,0 +1,23 @@
+# @package dataset.cingulate_40k_right
+dataset_name: cingulate_40k_right
+pickle_normal: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/CINGULATE./mask/Rskeleton.pkl
+numpy_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/CINGULATE./mask/Rskeleton.npy
+subjects_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/CINGULATE./mask/Rskeleton_subject.csv
+crop_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/CINGULATE./mask/Rcrops
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/CINGULATE./mask/Rlabels
+foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/CINGULATE./mask/Rlabel.npy
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/CINGULATE./mask/Rlabel_subject.csv
+distbottom_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/CINGULATE./mask/Rdistbottom
+distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/CINGULATE./mask/Rdistbottom.npy
+extremity_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/CINGULATE./mask/Rextremities
+extremity_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/CINGULATE./mask/Rextremities.npy
+subjects_extremity_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/CINGULATE./mask/Rextremities_subject.csv
+subjects_distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/CINGULATE./mask/Rdistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/CINGULATE./mask/Rskeleton_subject.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/CINGULATE./mask/Rskeleton_subject.csv # no label
+subject_column_name: 'Subject'
+mask_path: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/CINGULATE./mask/Rmask.npy
+flip_dataset: False
+input_size: (1, 16, 37, 37)

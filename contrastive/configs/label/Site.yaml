@@ -1,0 +1,3 @@
+# @package _global_
+label_names: ["Site"]
+label_type: 'binary'

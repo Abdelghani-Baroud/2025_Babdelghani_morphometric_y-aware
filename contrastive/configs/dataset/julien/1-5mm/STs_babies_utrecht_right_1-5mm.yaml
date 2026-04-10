@@ -1,0 +1,14 @@
+# @package dataset.STs_babies_utrecht_1-5mm
+dataset_name: STs_babies_utrecht_1-5mm
+numpy_all: /neurospin/dico/data/deep_folding/current/datasets/utrecht_dhcp_morpho/crops/1.5mm/S.T.s./mask/Rskeleton.npy
+subjects_all: /neurospin/dico/data/deep_folding/current/datasets/utrecht_dhcp_morpho/crops/1.5mm/S.T.s./mask/Rskeleton_subject.csv
+crop_dir: /neurospin/dico/data/deep_folding/current/datasets/utrecht_dhcp_morpho/crops/1.5mm/S.T.s./mask/Rcrops
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/utrecht_dhcp_morpho/crops/1.5mm/S.T.s./mask/Rlabels
+foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/utrecht_dhcp_morpho/crops/1.5mm/S.T.s./mask/Rlabel.npy
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/utrecht_dhcp_morpho/crops/1.5mm/S.T.s./mask/Rlabel_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark:
+train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/utrecht_dhcp_morpho/train_val_subjects.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/utrecht_dhcp_morpho/preterm_labels.csv
+subject_column_name: 'Subject'
+input_size: (1, 29, 66, 60)

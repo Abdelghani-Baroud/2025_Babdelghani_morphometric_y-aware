@@ -1,0 +1,18 @@
+# @package _global_
+test: False
+mode: encoder
+#contrastive_model: SimCLR
+#contrastive_model: VicReg
+# contrastive_model: BarlowTwins
+# contrastive_model: Yaware
+contrastive_model: CLIPTabular
+BT_correlation: 'cross'
+with_labels: True
+proportion_pure_contrastive: 1.0
+temperature_initial: 0.1
+temperature: 0.1
+temperature_supervised: 0.3
+lambda_BT: 2.56
+lambda_VR: 2.56
+epsilon_VR: 0.001
+sigma_labels: null

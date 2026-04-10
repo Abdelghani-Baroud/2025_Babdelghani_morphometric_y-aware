@@ -1,0 +1,23 @@
+# @package dataset.SC-sylv_right_isomap
+dataset_name: SC-sylv_right_isomap
+numpy_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.C.-sylv./mask/Rskeleton.npy
+subjects_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.C.-sylv./mask/Rskeleton_subject.csv
+foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.C.-sylv./mask/Rlabel.npy
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.C.-sylv./mask/Rlabel_subject.csv
+crop_dir: /neurospin/dico/data/deep_folding/papers/miccai2023/Input/datasets/UkBioBank40/crops/2mm/S.C.-sylv./mask/Rcrops
+crop_file_suffix: _cropped_skeleton.nii.gz
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.C.-sylv./mask/Rlabels
+distbottom_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.C.-sylv./mask/Rdistbottom
+distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.C.-sylv./mask/Rdistbottom.npy
+subjects_distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.C.-sylv./mask/Rdistbottom_subject.csv
+extremity_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.C.-sylv./mask/Rextremities
+extremity_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.C.-sylv./mask/Rextremities.npy
+subjects_extremity_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.C.-sylv./mask/Rextremities_subject.csv
+pickle_benchmark: 
+train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/interrupted_SC_subjects.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/interrupted_SC_labels.csv
+subject_column_name: 'Subject'
+cutout_mask_path:
+cutin_mask_path:
+flip_dataset: False
+input_size: (1, 42, 34, 49)

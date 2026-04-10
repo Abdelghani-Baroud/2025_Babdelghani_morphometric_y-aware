@@ -1,0 +1,18 @@
+# @package dataset.ORBITAL_left
+dataset_name: ORBITAL_left
+pickle_normal: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Lskeleton.pkl
+numpy_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Lskeleton.npy
+subjects_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Lskeleton_subject.csv
+crop_dir: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Lcrops
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Llabels
+foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Llabel.npy
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Llabel_subject.csv
+distbottom_dir: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Ldistbottom
+distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Ldistbottom.npy
+subjects_distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Ldistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+train_val_csv_file: /neurospin/dico/data/deep_folding/papers/miccai2023/Input/datasets/hcp/crops/2mm/CINGULATE/mask/Rskeleton_subject_full.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/papers/miccai2023/Input/csv/hcp/participants.csv
+subject_column_name: 'Subject'
+input_size: (1, 30, 38, 22)

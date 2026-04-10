@@ -1,0 +1,3 @@
+# @package _global_
+label_names: ["Right_FIP"]
+nb_classes: 2

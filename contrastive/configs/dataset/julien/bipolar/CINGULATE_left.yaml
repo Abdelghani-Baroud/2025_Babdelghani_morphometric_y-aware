@@ -1,0 +1,24 @@
+# @package dataset.CINGULATE_left
+dataset_name: CINGULATE_left
+pickle_normal: ${dataset_folder}/aggregate_bipolar/crops/2mm/CINGULATE./mask/Lskeleton.pkl
+numpy_all: ${dataset_folder}/aggregate_bipolar/crops/2mm/CINGULATE./mask/Lskeleton.npy
+subjects_all: ${dataset_folder}/aggregate_bipolar/crops/2mm/CINGULATE./mask/Lskeleton_subject.csv
+crop_dir: ${dataset_folder}/aggregate_bipolar/crops/2mm/CINGULATE./mask/Lcrops
+foldlabel_dir: ${dataset_folder}/aggregate_bipolar/crops/2mm/CINGULATE./mask/Llabels
+foldlabel_all: ${dataset_folder}/aggregate_bipolar/crops/2mm/CINGULATE./mask/Llabel.npy
+subjects_foldlabel_all: ${dataset_folder}/aggregate_bipolar/crops/2mm/CINGULATE./mask/Llabel_subject.csv
+distbottom_dir: ${dataset_folder}/aggregate_bipolar/crops/2mm/CINGULATE./mask/Ldistbottom
+distbottom_all: ${dataset_folder}/aggregate_bipolar/crops/2mm/CINGULATE./mask/Ldistbottom.npy
+extremity_dir: ${dataset_folder}/aggregate_bipolar/crops/2mm/CINGULATE./mask/Lextremities
+extremity_all: ${dataset_folder}/aggregate_bipolar/crops/2mm/CINGULATE./mask/Lextremities.npy
+subjects_extremity_all: ${dataset_folder}/aggregate_bipolar/crops/2mm/CINGULATE./mask/Lextremities_subject.csv
+subjects_distbottom_all: ${dataset_folder}/aggregate_bipolar/crops/2mm/CINGULATE./mask/Ldistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark:
+train_val_csv_file: ${dataset_folder}/aggregate_bipolar/all_subjects.csv
+subject_labels_file: ${dataset_folder}/aggregate_bipolar/fake_labels.csv
+subject_column_name: 'Subject'
+cutout_mask_path:
+cutin_mask_path:
+flip_dataset: False
+input_size: (1, 18, 41, 38)

@@ -1,0 +1,29 @@
+# @package dataset.orbital_left_hcp_custom
+dataset_name: orbital_left_hcp_custom
+numpy_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Lskeleton.npy
+subjects_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Lskeleton_subject.csv
+foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Llabel.npy
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Llabel_subject.csv
+crop_dir: /neurospin/dico/data/deep_folding/papers/miccai2023/Input/datasets/hcp/crops/2mm/ORBITAL/mask/Lcrops
+crop_file_suffix: _cropped_skeleton.nii.gz
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Llabels
+distbottom_dir: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Ldistbottom
+distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Ldistbottom.npy
+subjects_distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Ldistbottom_subject.csv
+extremity_dir: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Lextremities
+extremity_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Lextremities.npy
+subjects_extremity_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/ORBITAL/mask/Lextremities_subject.csv
+pickle_benchmark: 
+#train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/hcp/fake_train_val.csv
+train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/orbital_patterns/Troiani/Left/union/fake_train_val.csv
+#test_csv_file: /neurospin/dico/data/deep_folding/current/datasets/hcp/hcp_1_test_without_headers.csv
+#test_csv_file: /neurospin/dico/data/deep_folding/current/datasets/hcp/union_custom_splits_train_val.csv
+test_csv_file: /neurospin/dico/data/deep_folding/current/datasets/orbital_patterns/Troiani/Left/union/union_custom_splits_train_val.csv
+#splits_basedir: /neurospin/dico/data/deep_folding/current/datasets/hcp/hcp_subjects_train_split_
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/hcp/hcp_OFC_labels.csv
+subject_column_name: 'Subject'
+cutout_mask_path: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/S.Or./mask/Lmask.npy
+cutin_mask_path: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank/crops/2mm/S.Or./mask/Lmask.npy
+flip_dataset: False
+input_size: (1, 30, 38, 22)
+#input_size: (1, 39, 32, 17)

@@ -1,0 +1,21 @@
+# @package dataset.orbital_left_UKB_kraken
+dataset_name: orbital_left_UKB_kraken
+pickle_normal: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/ORBITAL/mask/Lskeleton.pkl
+numpy_all: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/ORBITAL/mask/Lskeleton.npy
+subjects_all: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/ORBITAL/mask/Lskeleton_subject.csv
+crop_dir: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/ORBITAL/mask/Lcrops
+foldlabel_dir: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/ORBITAL/mask/Llabels
+foldlabel_all: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/ORBITAL/mask/Llabel.npy
+subjects_foldlabel_all: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/ORBITAL/mask/Llabel_subject.csv
+distbottom_dir: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/ORBITAL/mask/Ldistbottom
+distbottom_all: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/ORBITAL/mask/Ldistbottom.npy
+subjects_distbottom_all: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/ORBITAL/mask/Ldistbottom_subject.csv
+extremity_dir: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/ORBITAL/mask/Lextremities
+extremity_all: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/ORBITAL/mask/Lextremities.npy
+subjects_extremity_all: /home_local/jl277509/data/datasets/UkBioBank/crops/2mm/ORBITAL/mask/Lextremities_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark:
+train_val_csv_file: /home_local/jl277509/data/datasets/UkBioBank/subjects_full.csv
+subject_labels_file: /home_local/jl277509/data/datasets/UkBioBank/participants_labels.csv
+subject_column_name: 'Subject'
+input_size: (1, 30, 38, 22)

@@ -1,0 +1,27 @@
+# @package _global_
+# Configuration for running KNN classifier on latent space
+
+classifier_name: knn
+
+# Input file containing embeddings and labels
+training_embeddings: /neurospin/dico/data/deep_folding/current/datasets/schiz/morphometry_statistics/F.C.M.ant/shape_embs.csv
+
+# Optional: where to save results
+results_save_path: 
+
+# Optional: specify label column(s) if not default
+labels_of_interest: 
+
+# Number of experiment repeats (e.g., for stability or random seeds)
+n_repeat: 1
+
+# Train/test split
+classifier_test_size: 0.2
+classifier_seed: 24
+
+# KNN-specific hyperparameter search space (used in GridSearch)
+knn_hyperparams:
+  n_neighbors: [5, 10, 20, 30]
+  weights: ['uniform', 'distance']
+  metric: ['euclidean', 'manhattan']
+  leaf_size: [10, 20, 30]

@@ -1,0 +1,16 @@
+# @package _global_
+# Characterization of the ConvNet model used
+backbone_name: convnet
+encoder_depth: 3
+filters: [32,64,128]
+#filters: [64,128,256]
+initial_kernel_size: 7
+initial_stride: 1
+max_pool: False
+block_depth: 4
+backbone_output_size: 32
+adaptive_pooling: !!null
+#adaptive_pooling: ['max', [3,3,3]]
+#adaptive_pooling: ['average', [3,3,3]]
+#adaptive_pooling: ['max', 1]
+projection_head_hidden_layers:

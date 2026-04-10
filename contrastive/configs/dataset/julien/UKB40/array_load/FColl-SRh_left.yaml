@@ -1,0 +1,29 @@
+# @package dataset.FColl-SRh_left
+dataset_name: FColl-SRh_left
+pickle_normal: ${dataset_folder}/UkBioBank40/crops/2mm/F.Coll.-S.Rh./mask/Lskeleton.pkl
+numpy_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.Coll.-S.Rh./mask/Lskeleton.npy
+subjects_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.Coll.-S.Rh./mask/Lskeleton_subject.csv
+crop_dir: ${dataset_folder}/UkBioBank40/crops/2mm/F.Coll.-S.Rh./mask/Lcrops
+foldlabel_dir: ${dataset_folder}/UkBioBank40/crops/2mm/F.Coll.-S.Rh./mask/Llabels
+foldlabel_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.Coll.-S.Rh./mask/Llabel.npy
+subjects_foldlabel_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.Coll.-S.Rh./mask/Llabel_subject.csv
+distbottom_dir: ${dataset_folder}/UkBioBank40/crops/2mm/F.Coll.-S.Rh./mask/Ldistbottom
+distbottom_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.Coll.-S.Rh./mask/Ldistbottom.npy
+extremity_dir: ${dataset_folder}/UkBioBank40/crops/2mm/F.Coll.-S.Rh./mask/Lextremities
+extremity_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.Coll.-S.Rh./mask/Lextremities.npy
+subjects_extremity_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.Coll.-S.Rh./mask/Lextremities_subject.csv
+subjects_distbottom_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.Coll.-S.Rh./mask/Ldistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+# train_val_csv_file: ${dataset_folder}/UkBioBank40/crops/2mm/F.Coll.-S.Rh./mask/Lskeleton_subject.csv
+# subject_labels_file: ${dataset_folder}/UkBioBank40/participants_sex_age.csv
+train_csv_file: ${dataset_folder}/UkBioBank40/crops/2mm/LARGE_CINGULATE./mask/tiv_subjects_train.csv
+val_csv_file: ${dataset_folder}/UkBioBank40/crops/2mm/LARGE_CINGULATE./mask/tiv_subjects_val.csv
+test_csv_file: ${dataset_folder}/UkBioBank40/crops/2mm/LARGE_CINGULATE./mask/tiv_subjects_test.csv
+subject_labels_file: ${dataset_folder}/UkBioBank40/participants_tiv_volumes_normalized.csv # no label 
+subject_column_name: 'participant_id'
+# subject_column_name: 'Subject'
+cutout_mask_path:
+cutin_mask_path: ${dataset_folder}/UkBioBank40/crops/2mm/F.Coll.-S.Rh./mask/Lmask.npy
+flip_dataset: False
+input_size: (1, 29, 62, 36)

@@ -1,0 +1,17 @@
+# @package dataset.FIP_left_hcp_400_cv
+dataset_name: FIP_left_hcp_hcp_400_cv
+numpy_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/F.I.P./mask/Lskeleton.npy
+subjects_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/F.I.P./mask/Lskeleton_subject.csv
+foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/F.I.P./mask/Llabel.npy
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/F.I.P./mask/Llabel_subject.csv
+crop_dir: /neurospin/dico/data/deep_folding/papers/miccai2023/Input/datasets/hcp/crops/2mm/F.I.P./mask/Lcrops
+crop_file_suffix: _cropped_skeleton.nii.gz
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/hcp/crops/2mm/F.I.P./mask/Llabels
+pickle_benchmark: 
+train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/hcp/FIP/all_subs.csv
+test_csv_file: /neurospin/dico/data/deep_folding/current/datasets/hcp/FIP/all_subs.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/hcp/FIP/FIP_labels.csv
+subject_column_name: 'Subject'
+mask_path:
+flip_dataset: False
+input_size: (1, 40, 44, 42)

@@ -1,0 +1,24 @@
+# @package dataset.SPeC_right
+dataset_name: SPeC_right
+pickle_normal: ${dataset_folder}/aggregate_bipolar/crops/2mm/S.Pe.C./mask/Rskeleton.pkl
+numpy_all: ${dataset_folder}/aggregate_bipolar/crops/2mm/S.Pe.C./mask/Rskeleton.npy
+subjects_all: ${dataset_folder}/aggregate_bipolar/crops/2mm/S.Pe.C./mask/Rskeleton_subject.csv
+crop_dir: ${dataset_folder}/aggregate_bipolar/crops/2mm/S.Pe.C./mask/Rcrops
+foldlabel_dir: ${dataset_folder}/aggregate_bipolar/crops/2mm/S.Pe.C./mask/Rlabels
+foldlabel_all: ${dataset_folder}/aggregate_bipolar/crops/2mm/S.Pe.C./mask/Rlabel.npy
+subjects_foldlabel_all: ${dataset_folder}/aggregate_bipolar/crops/2mm/S.Pe.C./mask/Rlabel_subject.csv
+distbottom_dir: ${dataset_folder}/aggregate_bipolar/crops/2mm/S.Pe.C./mask/Rdistbottom
+distbottom_all: ${dataset_folder}/aggregate_bipolar/crops/2mm/S.Pe.C./mask/Rdistbottom.npy
+extremity_dir: ${dataset_folder}/aggregate_bipolar/crops/2mm/S.Pe.C./mask/Rextremities
+extremity_all: ${dataset_folder}/aggregate_bipolar/crops/2mm/S.Pe.C./mask/Rextremities.npy
+subjects_extremity_all: ${dataset_folder}/aggregate_bipolar/crops/2mm/S.Pe.C./mask/Rextremities_subject.csv
+subjects_distbottom_all: ${dataset_folder}/aggregate_bipolar/crops/2mm/S.Pe.C./mask/Rdistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark:
+train_val_csv_file: ${dataset_folder}/aggregate_bipolar/all_subjects.csv
+subject_labels_file: ${dataset_folder}/aggregate_bipolar/fake_labels.csv
+subject_column_name: 'Subject'
+cutout_mask_path:
+cutin_mask_path:
+flip_dataset: False
+input_size: (1, 38, 40, 50)

@@ -1,0 +1,21 @@
+# @package dataset.cingulate_dHCP_374_subjects_1-5mm
+dataset_name: cingulate_dHCP_374_subjects_1-5mm
+numpy_all: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/1.5mm/CINGULATE/mask/Rskeleton.npy
+subjects_all: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/1.5mm/CINGULATE/mask/Rskeleton_subject.csv
+crop_dir: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/1.5mm/CINGULATE/mask/Rcrops
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/1.5mm/CINGULATE/mask/Rlabels
+foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/1.5mm/CINGULATE/mask/Rlabel.npy
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/1.5mm/CINGULATE/mask/Rlabel_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark:
+# for two fold supervised classification, switch train and val alternatively
+#train_csv_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/1.5mm/CINGULATE/mask/test_50_subject.csv
+#val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/1.5mm/CINGULATE/mask/train_50_subject.csv
+#test_csv_file : /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/1.5mm/CINGULATE/mask/train_val_subject.csv
+train_val_csv_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/1.5mm/CINGULATE/mask/train_val_subject_sub.csv
+# for extremely preterm vs full-terms only
+#subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/1.5mm/CINGULATE/mask/preterm_labels_28_37.csv
+# for extremely preterm vs all
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/dHCP_374_subjects/crops/1.5mm/CINGULATE/mask/preterm_labels_sub.csv
+subject_column_name: 'Subject'
+input_size: (1, 20, 51, 52)

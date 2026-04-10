@@ -1,0 +1,24 @@
+# @package dataset.FCMpost-SpC_right
+dataset_name: FCMpost-SpC_right
+pickle_normal: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.M.post.-S.p.C./mask/Rskeleton.pkl
+numpy_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.M.post.-S.p.C./mask/Rskeleton.npy
+subjects_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.M.post.-S.p.C./mask/Rskeleton_subject.csv
+crop_dir: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.M.post.-S.p.C./mask/Rcrops
+foldlabel_dir: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.M.post.-S.p.C./mask/Rlabels
+foldlabel_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.M.post.-S.p.C./mask/Rlabel.npy
+subjects_foldlabel_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.M.post.-S.p.C./mask/Rlabel_subject.csv
+distbottom_dir: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.M.post.-S.p.C./mask/Rdistbottom
+distbottom_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.M.post.-S.p.C./mask/Rdistbottom.npy
+extremity_dir: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.M.post.-S.p.C./mask/Rextremities
+extremity_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.M.post.-S.p.C./mask/Rextremities.npy
+subjects_extremity_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.M.post.-S.p.C./mask/Rextremities_subject.csv
+subjects_distbottom_all: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.M.post.-S.p.C./mask/Rdistbottom_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: 
+train_val_csv_file: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.M.post.-S.p.C./mask/Rskeleton_subject.csv
+subject_labels_file: ${dataset_folder}/UkBioBank40/participants_sex_age.csv
+subject_column_name: 'Subject'
+cutout_mask_path:
+cutin_mask_path: ${dataset_folder}/UkBioBank40/crops/2mm/F.C.M.post.-S.p.C./mask/Rmask.npy
+flip_dataset: False
+input_size: (1, 17, 47, 31)

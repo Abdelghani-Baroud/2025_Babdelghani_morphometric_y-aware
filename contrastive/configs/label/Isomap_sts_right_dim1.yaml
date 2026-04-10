@@ -1,0 +1,4 @@
+'@package': _global_
+label_names:
+- Isomap_sts_right_dim1
+label_type: continuous

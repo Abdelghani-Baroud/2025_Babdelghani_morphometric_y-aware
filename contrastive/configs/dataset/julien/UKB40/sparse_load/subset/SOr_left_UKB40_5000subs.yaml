@@ -1,0 +1,25 @@
+# @package dataset.SOr_left_UKB40_5000subs
+dataset_name: SOr_left_UKB40_5000subs
+pickle_normal: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.Or./mask/Lskeleton.pkl
+coords_all: ${dataset_folder}/UkBioBank40/crops/2mm/S.Or./sparse_load/L/coords
+numpy_all: ${dataset_folder}/UkBioBank40/crops/2mm/S.Or./sparse_load/L/skeleton
+subjects_all: ${dataset_folder}/UkBioBank40/L_subjects_header.csv
+crop_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.Or./mask/Lcrops
+foldlabel_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.Or./mask/Llabels
+foldlabel_all: ${dataset_folder}/UkBioBank40/crops/2mm/S.Or./sparse_load/L/foldlabel
+subjects_foldlabel_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.Or./mask/Llabel_subject.csv
+distbottom_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.Or./mask/Ldistbottom
+distbottom_all: ${dataset_folder}/UkBioBank40/crops/2mm/S.Or./sparse_load/L/distbottom
+subjects_distbottom_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.Or./sparse_load/L/Ldistbottom_subject.csv
+extremity_dir: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.Or./mask/Lextremities
+extremity_all: ${dataset_folder}/UkBioBank40/crops/2mm/S.Or./sparse_load/L/extremities
+subjects_extremity_all: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/crops/2mm/S.Or./sparse_load/L/Lextremities_subject.csv
+crop_file_suffix: _cropped_skeleton.nii.gz
+pickle_benchmark: null
+train_val_csv_file: ${dataset_folder}/UkBioBank40/5000_Lsubjects.csv
+subject_labels_file: /neurospin/dico/data/deep_folding/current/datasets/UkBioBank40/participants_sex_age.csv
+subject_column_name: Subject
+cutout_mask_path: ${dataset_folder}/UkBioBank40/crops/2mm/S.Or./Lmask.npy
+cutin_mask_path: ${dataset_folder}/UkBioBank40/crops/2mm/S.Or./Lmask.npy
+flip_dataset: false
+input_size: (1, 30, 38, 22)
