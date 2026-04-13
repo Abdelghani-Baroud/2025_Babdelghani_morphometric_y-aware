@@ -1,50 +1,62 @@
 
 Global-to-Local Guidance for Cortical Sulcal Representation Learning
-###########################################################################
+===================================================================
 
-This repository aims to apply the self-supervised deep learning pipeline to learn a representation space for each sulcal region. It integrates global information to guide local learning.
+This repository contains the code for learning local cortical sulcal representations
+with self-supervised learning while incorporating global morphometric guidance.
+The project focuses on training and evaluating representation learning pipelines
+for sulcal analysis using PyTorch-based models and contrastive learning tools.
 
+This branch (`MiCCAI_brain_shape`) is dedicated to experiments related to
+global brain-shape guidance for local sulcal representation learning.
 
-Dependencies
+Repository structure
+--------------------
+
+- ``contrastive/``: training, evaluation, and experiment code
+- ``AUTHORS.rst``: authorship information
+- ``setup.py``: package installation and dependencies
+
+Installation
 ------------
-- python >= 3.6
-- pytorch >= 1.4.0
-- numpy >= 1.16.6
-- pandas >= 0.23.3
 
+.. code-block:: bash
 
-Set up the work environment
----------------------------
-First, the repository can be cloned thanks to:
+   git clone https://github.com/neurospin-projects/2025_Babdelghani_morphometric_y-aware.git
+   cd 2025_Babdelghani_morphometric_y-aware
+   git checkout MiCCAI_brain_shape
 
-.. code-block:: shell
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install --upgrade pip
+   pip install -e .
 
-    git clone https://github.com/neurospin-projects/2023_jlaval_STSbabies/
-    cd 2023_jlaval_STSbabies
+Requirements
+------------
 
-Then, install a virtual environment through the following command lines:
+Main dependencies are defined in ``setup.py``.
+Some scripts may additionally require a BrainVISA environment.
 
-.. code-block:: shell
+Training
+--------
 
-    python3 -m venv venv
-    . venv/bin/activate
-    pip3 install --upgrade pip
-    pip3 install -e .
+.. code-block:: bash
 
-Note that you might need a `BrainVISA <https://brainvisa.info>`_ environment to run
-some of the functions or notebooks.
+   cd contrastive
+   python3 train.py mode=encoder
 
-Preterm analysis requires training on UkBioBank, using SimCLR. A comprehensive description is given in contrastive/README.rst.
+Evaluation
+----------
 
-.. code-block:: shell
+.. code-block:: bash
 
-    cd contrastive
-    python3 train.py mode=encoder
+   cd contrastive
+   python3 evaluation/embeddings_pipeline.py
 
-Once the model is trained, the model performances can be assessed using SVC running:
+Data
+----
 
-.. code-block:: shell
+This project relies on neuroimaging-derived sulcal data and some experiments
+require UK Biobank-based pretraining data. Data access is not bundled in this repository.
 
-    cd contrastive
-    python3 evaluation/embeddings_pipeline.py
 
